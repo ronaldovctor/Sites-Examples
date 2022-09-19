@@ -1,0 +1,58 @@
+.saboresContent {
+	position: relative;
+	margin-bottom: 6.25rem;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background: var(--red-gradient);
+		top: 35rem;
+		width: 100%;
+		height: 44.5rem;
+	}
+
+	.content {
+		.description {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.sabores {
+			display: flex;
+			flex-wrap: wrap;
+
+			.donut {
+				position: relative;
+
+				&:nth-child(1) {
+					top: -3rem;
+				}
+
+				&:nth-child(2) {
+					top: 3.75rem;
+				}
+
+				&:nth-child(3) {
+					top: -3rem;
+				}
+
+				&:nth-child(odd) {
+					margin-right: auto;
+					margin-bottom: 3.75rem;
+				}
+			}
+		}
+
+		.complementos {
+			position: relative;
+			bottom: 5.5rem;
+			top: -13rem;
+			right: -30rem;
+		}
+
+		.detail {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}

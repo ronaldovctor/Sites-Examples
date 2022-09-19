@@ -6,7 +6,7 @@ import { ReactComponent as SweetsD } from '../../assets/logo.svg'
 function Header() {
 	return (
 		<header className={styles.header}>
-			<nav className={`${styles.nav} container`}>
+			<nav className={`${styles.nav} container-lg`}>
 				<div className={styles.logo}>
 					<SweetsD />
 				</div>

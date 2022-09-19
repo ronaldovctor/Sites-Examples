@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 	--roboto: 'Roboto', sans-serif;
 	--pacifico: 'Pacifico', cursive;
+	--red: #cc1f1f;
+	--blue: #2b93cd;
+	--red-gradient: linear-gradient(to bottom, #ff3737, #a60b0b);
+	--blue-gradient: linear-gradient(to bottom, #32a1e0, #0e80c0);
 }
 
 body {
@@ -37,14 +41,20 @@ a {
 	margin: 0 auto;
 }
 
+.container-lg {
+	max-width: 65rem;
+	margin: 0 auto;
+}
+
 .main-container {
-	margin-top: 0rem;
+	margin-top: 6.25rem;
 }
 
 .App {
 	display: flex;
 	flex-flow: column;
 	min-height: calc(100vh + 0rem);
+	overflow: hidden;
 
 	.AppBody {
 		flex: 1;

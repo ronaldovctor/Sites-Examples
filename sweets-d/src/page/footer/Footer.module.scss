@@ -1,0 +1,80 @@
+.content {
+	display: grid;
+	grid-template-columns: 30rem repeat(2, 1fr);
+	padding-bottom: 2rem;
+
+	.img {
+		position: relative;
+		height: 20rem;
+		width: 100%;
+
+		img {
+			position: absolute;
+			top: 30%;
+			transform: translateY(-50%);
+			width: 60%;
+			background-size: cover;
+		}
+	}
+
+	.contato,
+	.infos {
+		display: flex;
+		flex-flow: column;
+		text-align: start;
+
+		h3 {
+			font-family: var(--pacifico);
+			font-size: 2.5rem;
+			letter-spacing: 0.05rem;
+
+			span {
+				&:first-child {
+					color: var(--red);
+				}
+				&:last-child {
+					color: var(--blue);
+				}
+			}
+		}
+
+		.links {
+			margin-top: 2rem;
+			font-family: var(--roboto);
+			font-size: 1.2rem;
+			font-weight: 500;
+			letter-spacing: 0.02rem;
+
+			li {
+				margin-bottom: 0.75rem;
+
+				a {
+					color: black;
+				}
+			}
+
+			.sep {
+				margin: 1.5rem 0;
+				width: 85%;
+				height: 0.4rem;
+				background-color: var(--red);
+				border-radius: 0.4rem;
+			}
+
+			.socials ul li {
+				display: inline-block;
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	.infos a {
+		text-decoration: underline;
+	}
+
+	.rights {
+		font-family: var(--roboto);
+		font-weight: 500;
+		font-size: 1.125rem;
+	}
+}

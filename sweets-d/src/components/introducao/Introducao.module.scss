@@ -1,0 +1,24 @@
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 6.25rem;
+
+	.description {
+		position: relative;
+		top: 6rem;
+		align-self: flex-start;
+	}
+
+	.img {
+		margin-top: 1.5rem;
+		margin-left: 1.5rem;
+		max-width: 34rem;
+	}
+
+	.detail {
+		position: absolute;
+		bottom: 0;
+	}
+}

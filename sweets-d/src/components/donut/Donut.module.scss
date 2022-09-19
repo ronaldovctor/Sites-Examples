@@ -1,0 +1,85 @@
+.content {
+	display: flex;
+	flex-flow: column;
+	max-width: 26rem;
+
+	&.row {
+		max-width: 57.5rem;
+		flex-flow: row;
+
+		.description {
+			align-self: center;
+			max-height: 10rem;
+			margin-left: 1rem;
+		}
+	}
+
+	.photo {
+		position: relative;
+
+		img {
+			border-radius: 0.625rem;
+			margin-bottom: 1rem;
+		}
+
+		.price {
+			position: absolute;
+			right: -2.5rem;
+			top: 1rem;
+			padding: 0.2rem 0.7rem;
+			font-family: var(--roboto);
+			font-size: 1.3rem;
+			font-weight: 500;
+			border-radius: 0.625rem;
+			color: white;
+			background: var(--red-gradient);
+
+			&.blue {
+				background: var(--blue-gradient);
+			}
+		}
+	}
+
+	.description {
+		width: 100%;
+		background: white;
+		padding: 1.5rem;
+		text-align: center;
+		border-radius: 0.625rem;
+
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: var(--pacifico);
+			font-size: 2rem;
+			letter-spacing: 0.05rem;
+
+			p {
+				color: black;
+				position: relative;
+
+				&::first-letter {
+					color: var(--red);
+				}
+
+				&:last-child::after {
+					content: '';
+					position: absolute;
+					width: 0.55rem;
+					height: 0.55rem;
+					background-color: var(--blue);
+					border-radius: 50%;
+					right: -0.3rem;
+					bottom: 0.75rem;
+				}
+			}
+		}
+
+		.text {
+			font-family: var(--roboto);
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+		}
+	}
+}
