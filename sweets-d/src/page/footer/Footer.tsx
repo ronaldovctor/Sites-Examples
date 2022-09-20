@@ -7,7 +7,7 @@ import { ReactComponent as Youtube } from '../../assets/youtube.svg'
 
 function Footer() {
 	return (
-		<section className={styles.footer}>
+		<section id='contato' className={styles.footer}>
 			<div className={`${styles.content} container-lg`}>
 				<div className={styles.img}>
 					<img src={Logo} alt='logo' />
@@ -19,7 +19,7 @@ function Footer() {
 					<div className={styles.links}>
 						<ul>
 							<li>
-								<a href='tel:551199999999'>+55 11 9999-9999</a>
+								<a href='tel:+55-11-9999-9999'>+55 11 9999-9999</a>
 							</li>
 							<li>
 								<a href='mailto:contato@sweets-d.com'>contato@sweets-d.com</a>

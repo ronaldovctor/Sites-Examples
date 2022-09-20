@@ -1,5 +1,5 @@
 import React from 'react'
-import Donut from '../donut/Donut'
+import Donut, { animation } from '../donut/Donut'
 import TitleDescription from '../title-description/TitleDescription'
 import styles from './Sabores.module.scss'
 import Frutas from '../../assets/frutas.jpg'
@@ -10,7 +10,7 @@ import Complementos from '../complementos/Complementos'
 
 function Sabores() {
 	return (
-		<section className={styles.saboresContent}>
+		<section id='sabores' className={styles.saboresContent}>
 			<div className={`${styles.content} container-lg`}>
 				<div className={styles.description}>
 					<TitleDescription
@@ -28,6 +28,7 @@ function Sabores() {
 							description={
 								'Amora, morango, uva, manga e muito mais para sua escolha.'
 							}
+							animation={animation.bottom}
 						/>
 					</div>
 					<div className={styles.donut}>
@@ -37,6 +38,7 @@ function Sabores() {
 							description={
 								'Cobertura e recheio de chocolate branco com essências de morango e baunilha.'
 							}
+							animation={animation.top}
 						/>
 					</div>
 					<div className={styles.donut}>
@@ -48,6 +50,7 @@ function Sabores() {
 							}
 							flexDirection={'row'}
 							secondaryColorPrice={true}
+							animation={animation.right}
 						/>
 					</div>
 				</div>

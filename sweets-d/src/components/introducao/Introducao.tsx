@@ -6,7 +6,7 @@ import { ReactComponent as Detail } from '../../assets/detail.svg'
 
 function Introducao() {
 	return (
-		<section className={`${styles.content} container-lg`}>
+		<section id='intro' className={`${styles.content} container-lg`}>
 			<div className={styles.description}>
 				<TitleDescription
 					title={'Adoce sua Vida'}
@@ -15,7 +15,7 @@ function Introducao() {
 					}
 				/>
 			</div>
-			<img className={styles.img} src={DonutIntro} alt='img-intro' />
+			<img className={`${styles.img} animaLeft`} src={DonutIntro} alt='img-intro' />
 			<div className={styles.detail}>
 				<Detail />
 			</div>

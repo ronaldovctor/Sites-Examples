@@ -12,7 +12,7 @@ function Comentario() {
 			}}
 		>
 			<div className={`${styles.content} container-lg`}>
-				<div className={styles.text}>
+				<div className={`${styles.text} animaRight`}>
 					<p>
 						“Um dos melhores donuts que eu e meus amigos já provaramos, se não o
 						melhor. Seja em festa ou quando nos reunimos sempre pedimos para a

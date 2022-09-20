@@ -53,10 +53,64 @@ a {
 .App {
 	display: flex;
 	flex-flow: column;
-	min-height: calc(100vh + 0rem);
+	min-height: calc(100vh + 23.5rem);
 	overflow: hidden;
 
 	.AppBody {
 		flex: 1;
+	}
+}
+
+.animaLeft {
+	animation: left 0.8s forwards;
+}
+.animaRight {
+	animation: right 0.8s forwards;
+}
+.animaBottom {
+	animation: bottom 0.8s forwards;
+}
+.animaTop {
+	animation: top 0.8s forwards;
+}
+
+@keyframes left {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: initial;
+		transform: initial;
+	}
+}
+@keyframes right {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	100% {
+		opacity: initial;
+		transform: initial;
+	}
+}
+@keyframes bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: initial;
+		transform: initial;
+	}
+}
+@keyframes top {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: initial;
+		transform: initial;
 	}
 }
