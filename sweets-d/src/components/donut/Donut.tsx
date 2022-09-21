@@ -36,11 +36,10 @@ function Donut({
 			</div>
 			<div className={styles.description}>
 				<h3 className={styles.title}>
-					{newTitle.map((word) => (
-						<p>{word}&nbsp;</p>
+					{newTitle.map((word, index) => (
+						<p key={index}>{word}&nbsp;</p>
 					))}
 				</h3>
-				{/*&nbsp; <span>F</span>rutas <span>F</span>rescas<span>.</span> */}
 				<p className={styles.text}>{description}</p>
 			</div>
 		</div>

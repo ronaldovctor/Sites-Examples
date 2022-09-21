@@ -17,7 +17,7 @@ function Complementos({ items }: { items: ComplementosProps[] }) {
 			<div className={styles.complementos}>
 				<ul>
 					{items.map(({ description, price }) => (
-						<li>
+						<li key={price}>
 							<p>{description}</p>
 							<span>$ {price}</span>
 						</li>

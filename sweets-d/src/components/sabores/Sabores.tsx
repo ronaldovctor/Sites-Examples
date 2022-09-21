@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Donut, { animation } from '../donut/Donut'
 import TitleDescription from '../title-description/TitleDescription'
 import styles from './Sabores.module.scss'
@@ -7,6 +7,7 @@ import ChocolateBranco from '../../assets/chocolate-branco.jpg'
 import ChocolateAoLeite from '../../assets/chocolate-leite.jpg'
 import { ReactComponent as Detail } from '../../assets/detail_2.svg'
 import Complementos from '../complementos/Complementos'
+import DonutOption from '../donut-option/DonutOption'
 
 function Sabores() {
 	return (

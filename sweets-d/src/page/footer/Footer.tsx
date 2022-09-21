@@ -4,10 +4,21 @@ import Logo from '../../assets/logo.svg'
 import { ReactComponent as Facebook } from '../../assets/facebook.svg'
 import { ReactComponent as Instagram } from '../../assets/instagram.svg'
 import { ReactComponent as Youtube } from '../../assets/youtube.svg'
+import { HashLink } from 'react-router-hash-link'
+import { NavLink, useLocation } from 'react-router-dom'
 
 function Footer() {
+	const location = useLocation()
+	const home = location.pathname != '/pedidos'
+
 	return (
-		<section id='contato' className={styles.footer}>
+		<section
+			id='contato'
+			className={styles.footer}
+			style={{
+				backgroundColor: 'white',
+			}}
+		>
 			<div className={`${styles.content} container-lg`}>
 				<div className={styles.img}>
 					<img src={Logo} alt='logo' />
@@ -48,13 +59,19 @@ function Footer() {
 					<div className={styles.links}>
 						<ul>
 							<li>
-								<a href=''>Sabores</a>
+								{home ? (
+									<HashLink smooth to='#sabores'>
+										Sabores
+									</HashLink>
+								) : (
+									<NavLink to={'/'}>Sabores</NavLink>
+								)}
 							</li>
 							<li>
-								<a href=''>Pedidos</a>
+								<NavLink to={'/pedidos'}>Pedidos</NavLink>
 							</li>
 							<li>
-								<a href=''>Contatos</a>
+								<HashLink to='#contato'>Contatos</HashLink>
 							</li>
 						</ul>
 					</div>

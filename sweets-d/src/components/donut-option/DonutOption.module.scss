@@ -1,0 +1,74 @@
+.donutOption {
+	background: white;
+	border-radius: 0.625rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+
+	&.red {
+		background: var(--red-gradient);
+
+		.description,
+		.options {
+			color: white;
+		}
+	}
+
+	.description {
+		font-family: var(--roboto);
+		font-size: 1.25rem;
+		font-weight: 500;
+		color: black;
+		display: flex;
+		align-items: center;
+
+		.text {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin-left: 0.75rem;
+		}
+	}
+
+	.options {
+		display: flex;
+		align-items: center;
+		padding: 1rem 0;
+		font-family: var(--roboto);
+		font-weight: 500;
+		font-size: 0.85rem;
+
+		.qtd input {
+			margin-top: 10px;
+			border: 1px solid #666666;
+			border-radius: 0.5rem;
+			padding: 0.5rem 0.75rem;
+		}
+
+		.sep {
+			width: 4px;
+			height: 100px;
+			background: white;
+			border-radius: 10px;
+			margin: 0 1.2rem;
+		}
+
+		.extras {
+			width: 100%;
+
+			.extra {
+				display: flex;
+				align-items: center;
+				margin: 10px 0;
+
+				.text {
+					margin-left: 0.5rem;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+			}
+		}
+	}
+}
